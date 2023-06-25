@@ -146,3 +146,25 @@ This script is run the first time the instance is launched. It installs a web se
 * View All Instances
 
 ![Alt text](image-9.png)
+
+### Create Private Subnet 1:
+* Go to VPC console
+* Click Subnets ---> Create Subnet
+* VPC = My VPC
+* Subnet Name
+* Select First AZ
+* IPv4 CIDR = 10.0.2.0/24
+* Create Subnet
+
+![Alt text](image-10.png)
+
+### Create Private Subnet 2:
+* Go to VPC console
+* Click Subnets ---> Create Subnet
+* VPC = My VPC
+* Subnet Name 2
+* Select Second AZ
+* IPv4 CIDR = 10.0.3.0/24
+* Create Subnet
+
+![Alt text](image-11.png)
