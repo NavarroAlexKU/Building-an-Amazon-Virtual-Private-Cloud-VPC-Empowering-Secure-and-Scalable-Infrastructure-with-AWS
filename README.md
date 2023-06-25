@@ -200,3 +200,33 @@ Amazon RDS instances require a database subnet group. A DB subnet group is a col
 * Create Subnet
 
 ![Alt text](image-13.png)
+
+### Create an Amazon RDS Database:
+
+* Choose Create Database
+* Engine Options = MySQL
+* Version = MySQL 5.7.X
+* Templates Section, select Dev/Test
+* Settings:
+    - DB Instance Identifier = myDB
+    - Enter credentials
+* DB Instance Class:
+    - DB instance class: Burstable classes
+    - Select db.t2.micro or db.t3.micro
+    - In the Storage section, de-select  Enable storage autoscaling
+* Connectivity Section:
+    - Virtual Private Cloud (VPC): My VPC
+    - Public access:  No
+    - Existing VPC security groups:
+        - Add the Database security group
+        - Remove the default security group
+* In the Monitoring section, de-select  Enable Enhanced monitoring
+* Additional Configuration:
+    - Initial database name: myDB
+    - De-select  Enable automated backups This turn off backups, which launches the database a little bit quicker for your lab.
+    - De-select  Enable auto minor version upgrade
+* Click Create Database
+
+Wait for the DB to finish creating:
+
+![Alt text](image-14.png)
