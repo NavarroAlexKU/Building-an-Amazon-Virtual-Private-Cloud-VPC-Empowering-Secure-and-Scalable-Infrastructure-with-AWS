@@ -11,3 +11,16 @@ Alex Navarro - Senior Business Intelligence Engineer
 
 ## Project Overview:
 Build a VPC that includes a web server and an Amazon RDS database. Once both are created, connect the address book application running the web server to the Amazon RDS for MySQL instance. Upon successful configuration of the address book application with the RDS instance, we will be able to add and remove contacts from the address book.
+
+## What is Amazon VPC?
+https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
+
+### Create a VPC:
+* Go to the VPC management console
+* Create VPC
+* Choose VPC Only
+* Give VPC Name
+* IPv4 CIDR Block = 10.0.0.0/16
+* Click Create VPC:
+
+![Alt text](image.png)
