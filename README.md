@@ -170,3 +170,17 @@ This script is run the first time the instance is launched. It installs a web se
 ![Alt text](image-11.png)
 
 ### Create a Security Group for the Database Server:
+Now that the private subnets are configured, you secure the types of traffic that can access the MySQL database. I need to create a security group to only allow MySQL traffic from my Web server.
+
+* Navigate to Security Group in VPC console
+* Click Create Security Group
+* Name = Database
+* Description = My DB Security Group
+* Choose My VPC
+* Inbound
+    - Add Rule
+    - Type = MySQL/Aurora
+    - Custom = Paste Security Group ID from Web Server SG
+
+This allows the web server to communicate with the database.
+![Alt text](image-12.png)
