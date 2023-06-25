@@ -184,3 +184,19 @@ Now that the private subnets are configured, you secure the types of traffic tha
 
 This allows the web server to communicate with the database.
 ![Alt text](image-12.png)
+
+### Create a Database Subnet Group:
+Amazon RDS instances require a database subnet group. A DB subnet group is a collection of subnets (typically private) that you create in a VPC and that you then designate for your DB instances. Each DB subnet group should have subnets in at least two Availability Zones in a given region. When creating a DB instance in a VPC, you must select a DB subnet group.
+
+* Go to RDS management console
+* Subnet groups
+* Create DB Subnet Group
+* Name = My Subnet Group
+* Description = My Subnet Group
+* VPC = My VPC
+* Add Subnets:
+    - Select first and second AZ on the list
+* Choose your CDIR blocks
+* Create Subnet
+
+![Alt text](image-13.png)
