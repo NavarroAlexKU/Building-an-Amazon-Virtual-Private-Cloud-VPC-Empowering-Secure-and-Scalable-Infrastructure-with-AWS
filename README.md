@@ -10,7 +10,7 @@ Alex Navarro - Senior Business Intelligence Engineer
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBpRjxKKJtxTLNxwpsKvpfbRSRnRLcTQRMZLcKCNfrJjXfcNNKPmstkbHJpzHGNZnHvhCph)
 
 ## Project Overview:
-Build a VPC that includes a web server and an Amazon RDS database. Once both are created, connect the address book application running the web server to the Amazon RDS for MySQL instance. Upon successful configuration of the address book application with the RDS instance, we will be able to add and remove contacts from the address book.
+Build a VPC that includes a web server and an Amazon RDS database. Once both are created, connect the address book application running the web server to the Amazon RDS for MySQL instance.
 
 ## What is Amazon VPC?
 https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
@@ -230,3 +230,7 @@ Amazon RDS instances require a database subnet group. A DB subnet group is a col
 Wait for the DB to finish creating:
 
 ![Alt text](image-14.png)
+
+We can see that the VPC configuration with the database was successful as it shows the status as now available.
+
+![Alt text](image-15.png)
