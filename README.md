@@ -57,3 +57,17 @@ Automatically request a public IPv4 address for a new network interface.
 ![Alt text](image-3.png)
 
 ### Create an Internet Gateway:
+An Internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the Internet. It therefore imposes no availability risks or bandwidth constraints on your network traffic.
+
+An Internet gateway serves two purposes: to provide a target in your VPC route tables for Internet-routable traffic, and to perform network address translation (NAT) for instances that have been assigned public IPv4 addresses.
+
+* Choose "Create an Internet Gateway"
+* Name tag = My IG
+* Choose Create Internet Gateway
+* Go to Actions Drop down and Choose "Attach to VPC"
+* Select My VPC
+* Choose Attach internet gateway
+
+This attaches the Internet gateway to the VPC. Even though I created an Internet gateway and attached it to my VPC, you still have to tell instances within your public subnet how to get to the Internet.
+
+![Alt text](image-4.png)
