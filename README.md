@@ -42,3 +42,6 @@ Remember that public subnets allow our vpc to talk to the internet. Therefore, w
 * Subnet Name = Public 1
 * AZ = Select first AZ
 * IPv4 CIDR Block = 10.0.1.0/24
+
+We can see the subnet has been created and shows the configuration details mentioned above:
+![Alt text](image-2.png)
