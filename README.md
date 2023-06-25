@@ -45,3 +45,11 @@ Remember that public subnets allow our vpc to talk to the internet. Therefore, w
 
 We can see the subnet has been created and shows the configuration details mentioned above:
 ![Alt text](image-2.png)
+
+Automatically request a public IPv4 address for a new network interface.
+
+* Go to the Actions drop down then select "Edit Subnet Settings"
+* Enable auto-assign public IPv4 address
+* Choose Save
+
+![Alt text](image-3.png)
