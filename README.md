@@ -81,7 +81,7 @@ To use an Internet gateway, your subnet’s route table must contain a route tha
 * Add a route to the route table to direct internet-bound traffic to the internet gateway
 * Associate the public subnet with the route table.
 
-![ScreenShot](![Alt text](image-5.png))
+![Alt text](image-5.png)
 
 Add a route to enable public traffic
 
@@ -90,7 +90,7 @@ Add a route to enable public traffic
 * Destination = 0.0.0.0/0
 * Target = Choose the Internet Gateway ID from the My IG
 
-![ScreenShot](![Alt text](image-6.png))
+![Alt text](image-6.png)
 
 * Choose the "Subnet Associations" tab
 * Edit Subnet Assocations
@@ -99,4 +99,4 @@ Add a route to enable public traffic
 
 We have now built our route table and associated it with the public subnet.
 
-![ScreenShot](![Alt text](image-7.png))
+![Alt text](image-7.png)
