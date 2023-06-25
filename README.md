@@ -147,7 +147,7 @@ This script is run the first time the instance is launched. It installs a web se
 
 ![Alt text](image-9.png)
 
-### Create Private Subnet 1:
+### Create Private Subnet 1 for MySQL Server:
 * Go to VPC console
 * Click Subnets ---> Create Subnet
 * VPC = My VPC
@@ -158,7 +158,7 @@ This script is run the first time the instance is launched. It installs a web se
 
 ![Alt text](image-10.png)
 
-### Create Private Subnet 2:
+### Create Private Subnet 2 for MySQL Server:
 * Go to VPC console
 * Click Subnets ---> Create Subnet
 * VPC = My VPC
