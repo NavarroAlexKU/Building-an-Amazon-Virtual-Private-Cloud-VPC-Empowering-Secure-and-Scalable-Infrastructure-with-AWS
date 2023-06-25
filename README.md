@@ -115,3 +115,34 @@ A security group acts as a virtual firewall for your instance to control inbound
 * Click create security group
 
 ![Alt text](image-8.png)
+
+### Launch a Web Server within the Public Subnet:
+* Go to EC2
+* Launch Instances
+* Name and Tags = Web Server
+* AMI = Amazon Linux 2 AMI
+* Proceed without a key pair
+* Network Settings Click Edit
+    - VPC = My VPC
+    - Firewall (security groups) = Select an existing security group
+    - Common Security Groups = Web Server
+* Expand Advanced Details
+* Enter the following script into the User Data text box
+```
+#!/bin/bash -ex
+yum -y update
+yum -y install httpd php mysql php-mysql
+chkconfig httpd on
+service httpd start
+cd /var/www/html
+wget https://us-west-2-aws-training.s3.amazonaws.com/courses/spl-13/v4.2.27.prod-ce5abbb0/scripts/app.tgz
+tar xvfz app.tgz
+chown apache:root /var/www/html/rds.conf.php
+```
+
+This script is run the first time the instance is launched. It installs a web server on your EC2 instance, and runs an app that can be configured to point to your MySQL RDS instance. After you configure your RDS instance, it presents an address book that you can edit.
+
+* Launch Instance
+* View All Instances
+
+![Alt text](image-9.png)
