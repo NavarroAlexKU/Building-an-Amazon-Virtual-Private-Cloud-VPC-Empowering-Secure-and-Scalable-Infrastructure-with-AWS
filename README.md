@@ -168,3 +168,5 @@ This script is run the first time the instance is launched. It installs a web se
 * Create Subnet
 
 ![Alt text](image-11.png)
+
+### Create a Security Group for the Database Server:
