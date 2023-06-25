@@ -71,3 +71,32 @@ An Internet gateway serves two purposes: to provide a target in your VPC route t
 This attaches the Internet gateway to the VPC. Even though I created an Internet gateway and attached it to my VPC, you still have to tell instances within your public subnet how to get to the Internet.
 
 ![Alt text](image-4.png)
+
+### Create a Route Table, Add Routes, And Associate Public Subnets
+A route table contains a set of rules, called routes, that are used to determine where network traffic is directed. Each subnet in your VPC must be associated with a route table; the table controls the routing for the subnet. A subnet can only be associated with one route table at a time, but you can associate multiple subnets with the same route table.
+
+To use an Internet gateway, your subnet’s route table must contain a route that directs Internet-bound traffic to the Internet gateway. You can scope the route to all destinations not explicitly known to the route table (0.0.0.0/0 for IPv4 or ::/0 for IPv6), or you can scope the route to a narrower range of IP addresses; for example, the public IPv4 addresses of your company’s public endpoints outside of AWS, or the Elastic IP addresses of other Amazon EC2 instances outside your VPC. If your subnet is associated with a route table that has a route to an Internet gateway, it’s known as a public subnet.
+
+* Create a route table for internet-bound traffic
+* Add a route to the route table to direct internet-bound traffic to the internet gateway
+* Associate the public subnet with the route table.
+
+![ScreenShot](![Alt text](image-5.png))
+
+Add a route to enable public traffic
+
+* Click Edit Routes
+* Add route
+* Destination = 0.0.0.0/0
+* Target = Choose the Internet Gateway ID from the My IG
+
+![ScreenShot](![Alt text](image-6.png))
+
+* Choose the "Subnet Associations" tab
+* Edit Subnet Assocations
+* Select Subnet Public 1
+* Save
+
+We have now built our route table and associated it with the public subnet.
+
+![ScreenShot](![Alt text](image-7.png))
