@@ -48,8 +48,12 @@ We can see the subnet has been created and shows the configuration details menti
 
 Automatically request a public IPv4 address for a new network interface.
 
-* Go to the Actions drop down then select "Edit Subnet Settings"
-* Enable auto-assign public IPv4 address
-* Choose Save
+* Enable auto-assign public IPv4 address provides a public IPv4 address for all instances launched into the selected subnet.
+
+    * Go to the Actions drop down then select "Edit Subnet Settings"
+    * Enable auto-assign public IPv4 address
+    * Choose Save
 
 ![Alt text](image-3.png)
+
+### Create an Internet Gateway:
