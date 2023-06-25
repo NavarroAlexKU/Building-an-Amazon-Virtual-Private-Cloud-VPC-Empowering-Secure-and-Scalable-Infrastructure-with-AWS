@@ -100,3 +100,18 @@ Add a route to enable public traffic
 We have now built our route table and associated it with the public subnet.
 
 ![Alt text](image-7.png)
+
+### Create a Security Group for your Web Server
+A security group acts as a virtual firewall for your instance to control inbound and outbound traffic. When you launch an instance in a VPC, you can assign up to five security groups to the instance. Security groups act at the instance level, not the subnet level. Therefore, each instance in a subnet in your VPC could be assigned to a different set of security groups. If you do not specify a particular group at launch time, the instance is automatically assigned to the default security group for the VPC.
+
+* Click on Security Groups
+* Create security group
+* Name = Web Server
+* Description = My Web Server Security Group
+* VPC = My VPC
+* Inbound Rules, click Add Rule
+* Type = HTTP
+* Source = Anywhere-Ipv4
+* Click create security group
+
+![Alt text](image-8.png)
